@@ -1,0 +1,9 @@
+#!/bin/sh
+go build -o demo
+mkdir demo-linux
+cp demo demo-linux/
+cp app.conf demo-linux/
+cp start.sh demo-linux/
+cp -arf view demo-linux/
+chmod +x demo-linux/start.sh
+echo "build demo success!"
